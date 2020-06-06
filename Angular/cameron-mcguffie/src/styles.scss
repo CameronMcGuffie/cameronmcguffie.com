@@ -11,11 +11,15 @@
 }
 
 body {
+    font-family: 'Century Gothic';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     background-image: url('./assets/images/bg_code.jpg');
     background-size: cover;
     background-position: center;
-    font-family: 'Century Gothic';
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
