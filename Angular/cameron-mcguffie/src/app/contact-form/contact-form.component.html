@@ -1,0 +1,25 @@
+<div class="contact_background">
+    <div class="contact_window">
+        <div class="contact_header">Contact Me</div>
+
+        <div class="contact_row">
+            <div class="contact_col_header">Your Name</div>
+            <div class="contact_col_input"><input type="text" [(ngModel)]="yourName" /></div>
+        </div>
+
+        <div class="contact_row">
+            <div class="contact_col_header">Your Email</div>
+            <div class="contact_col_input"><input type="text" [(ngModel)]="yourEmail" /></div>
+        </div>
+
+        <div class="contact_row_wide">
+            <div class="contact_col_header2">Your Message</div>
+            <div class="contact_col_input2"><textarea [(ngModel)]="yourMessage"></textarea></div>
+        </div>
+
+        <div class="contact_row">
+            <div class="contact_col_btn"><input type="button" value="Submit" (click)="sendemail()" /></div>
+            <div class="contact_col_btn"><input type="button" value="Cancel" (click)="hideContact()" /></div>
+        </div>
+    </div>
+</div>

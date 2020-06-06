@@ -1,0 +1,55 @@
+<div class="contact_card">
+  <div class="contact_top">
+      <div class="top_photo">
+          <img src='../assets/images/cameron.png' />
+      </div>
+      <div class="top_info">
+          <div class="hello">
+              <img src="../assets/images/hello.png" />
+          </div>
+          <div class="my_name">
+              I'm <div class="large_text">Cameron McGuffie</div>
+          </div>
+          <div class="my_skills">
+              Software Development | Audio Visual | Network Administration | Leadership
+          </div>
+          <div class="line_seperator">
+
+          </div>
+          <div class="my_info">
+              <div class="info_holder">
+                  <div class="info_icon"><img src="../assets/images/location.png" /></div>
+                  <div class="info_content">Brisbane, Australia</div>
+              </div>
+              <div class="info_holder">
+                  <div class="info_icon"><img src="../assets/images/code.png" /></div>
+                  <div class="info_content">NodeJS, Angular, Ruby, PHP, Python, C#, HTML, CSS</div>
+              </div>
+              <div class="info_holder">
+                  <div class="info_icon"><img src="../assets/images/tools.png" /></div>
+                  <div class="info_content">Docker, Ansible, SVN/git, GCP/AWS</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="contact_bottom">
+      <div class="my_services">
+          <div class="service">
+              <a href="https://www.linkedin.com/in/cmcguffie/" target="_blank"><img src="../assets/images/linkedin.png" /></a>
+          </div>
+          <div class="spacer">
+              &nbsp;
+          </div>
+          <div class="service">
+              <a href="http://github.com/cameronmcguffie" target="_blank"><img src="../assets/images/github.png" /></a>
+          </div>
+          <div class="spacer">
+              &nbsp;
+          </div>
+          <div class="contact">
+              <input type="button" value="Contact Me" (click)="showContact()" />
+          </div>
+      </div>
+  </div>
+</div>
+<contact-form *ngIf="this.contact_show" (hideContactPopup)="eventEmitHandler($event)"></contact-form>

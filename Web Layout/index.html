@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Cameron McGuffie</title>
+        <style type="text/css">
+            @font-face {
+                font-family: 'Century Gothic';
+                src: url('fonts/CenturyGothic.eot');
+                src: local('Century Gothic'), local('CenturyGothic'),
+                    url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/CenturyGothic.woff2') format('woff2'),
+                    url('fonts/CenturyGothic.woff') format('woff'),
+                    url('fonts/CenturyGothic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                background-image: url('images/bg_code.jpg');
+                background-size: cover;
+                background-position: center;
+                font-family: 'Century Gothic';
+            }
+
+            .contact_card {
+                background-color: #fff;
+                width: 1500px;
+                height: 700px;
+
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                -webkit-box-shadow: 3px 3px 9px 5px rgba(0,0,0,0.23); 
+                box-shadow: 3px 3px 9px 5px rgba(0,0,0,0.23);
+
+                display: flex;
+                flex-direction: column;
+
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+            }
+
+            .contact_top {
+                height: 550px;
+                display: flex;
+            }
+
+            .top_photo {
+                padding: 25px;
+            }
+            
+            .top_info {
+                width:100%;
+
+                padding-top: 25px;
+                padding-right: 25px;
+                padding-bottom: 25px;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hello {
+                padding: 0px;
+                margin-bottom: -30px;
+            }
+
+            .my_name {
+                font-size: 70px;
+            }
+
+            .large_text {
+                font-size: 90px;
+                font-weight: bold;
+                display: inline;
+            }
+
+            .my_skills {
+                width:100%;
+                
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .line_seperator {
+                width: 100%;
+                padding-top: 20px;
+                border-bottom:  1px solid #000;
+            }
+
+            .my_info {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                /*align-items: center;*/
+                justify-content: center;
+            }
+
+            .info_holder {
+                display: flex;
+                align-items: center;
+            }
+
+            .info_icon {
+                padding-right: 10px;
+            }
+
+            .info_content {
+                font-size: 25px;
+            }
+
+            .contact_bottom {
+                height: 150px;
+                background-color: #2f82f6;
+            }
+
+            .my_services {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .my_services a {
+                text-decoration: none;
+            }
+
+            .spacer {
+                padding-left: 25px;
+            }
+
+            @media screen 
+            and (max-device-width: 1600px)  {
+                .contact_card {
+                    width: 90%;
+                    height: 900px;
+                }
+
+                .contact_top {
+                    height: 750px;
+                    padding: 15px;
+                }
+
+                .hello {
+                    margin: 0px;
+                }
+
+                .large_text {
+                    font-size: 70px;
+                }
+                
+                .top_photo {
+                    padding-top: 120px;
+                }
+            }
+            
+            @media screen 
+            and (orientation: landscape)
+            and (max-device-width: 1600px)  {
+                .contact_card {
+                    transform: translate(0%, 0%);
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contact_card">
+            <div class="contact_top">
+                <div class="top_photo">
+                    <img src='images/cameron.png' />
+                </div>
+                <div class="top_info">
+                    <div class="hello">
+                        <img src="images/hello.png" />
+                    </div>
+                    <div class="my_name">
+                        I'm <div class="large_text">Cameron McGuffie</div>
+                    </div>
+                    <div class="my_skills">
+                        Software Development | Audio Visual | Network Administration | Leadership
+                    </div>
+                    <div class="line_seperator">
+
+                    </div>
+                    <div class="my_info">
+                        <div class="info_holder">
+                            <div class="info_icon"><img src="images/location.png" /></div>
+                            <div class="info_content">Brisbane, Australia</div>
+                        </div>
+                        <div class="info_holder">
+                            <div class="info_icon"><img src="images/code.png" /></div>
+                            <div class="info_content">NodeJS, Angular, Ruby, PHP, Python, C#, HTML, CSS</div>
+                        </div>
+                        <div class="info_holder">
+                            <div class="info_icon"><img src="images/tools.png" /></div>
+                            <div class="info_content">Docker, Ansible, SVN/git, GCP/AWS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_bottom">
+                <div class="my_services">
+                    <div class="service">
+                        <a href="https://www.linkedin.com/in/cmcguffie/" target="_blank"><img src="images/linkedin.png" /></a>
+                    </div>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="service">
+                        <a href="http://github.com/cameronmcguffie" target="_blank"><img src="images/github.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
